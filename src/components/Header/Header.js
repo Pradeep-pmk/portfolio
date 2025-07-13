@@ -36,7 +36,9 @@ const Header = () => {
         <Link to="contact" smooth={true} duration={500} onClick={closeMenu}>
           <h4>Contact</h4>
         </Link>
-        <h3 className='header__rightButton' onClick={closeMenu}>Join With Me</h3>
+        <Link to="contact" smooth={true} duration={500} onClick={closeMenu}>
+          <h3 className='header__rightButton' onClick={closeMenu}>Join With Me</h3>
+        </Link>
       </div>
 
       {/* Menu Icon for mobile */}

@@ -85,6 +85,11 @@
     justify-content: center;
     gap: 15px;
   }
+  .css-53g0n7-MuiButtonBase-root-MuiIconButton-root {
+  color: white !important;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
 }
 
 /* Phones and smaller (≤ 425px) */
@@ -98,8 +103,10 @@
   }
 
   .css-53g0n7-MuiButtonBase-root-MuiIconButton-root {
-    font-size: 26px;
-  }
+  color: white !important;
+  font-size: 26px;
+  transition: transform 0.3s ease;
+}
 }
 
 /* Extra small phones (≤ 320px) */
@@ -117,6 +124,8 @@
   }
 
   .css-53g0n7-MuiButtonBase-root-MuiIconButton-root {
-    font-size: 24px;
-  }
+  color: white !important;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
 }

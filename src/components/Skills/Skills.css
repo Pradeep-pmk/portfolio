@@ -17,8 +17,9 @@
 
 .skillcontainer__image img {
   width: 100%;
-  max-width: 500px;
-  height: auto;
+  max-width: 600px;
+  height: 400px;
+  border-radius: 100px;
 }
 
 .skillcontainer__text {

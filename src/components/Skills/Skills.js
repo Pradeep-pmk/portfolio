@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Skills.css";
 import { Element } from 'react-scroll'
-import skilling from "../../assets/four.png"
+import skilling from "../../assets/skills.png"
 import LinearProgress from '@mui/material/LinearProgress';
 
 
@@ -34,25 +34,25 @@ const Skills = () => {
             <div className='skillcontainer__skillSet'>
                 <h5>Javascript</h5>
                 <div className='skillcontainer__slider skillcontainer__slider4'>
-                    <LinearProgress variant="determinate" value={60}/>
+                    <LinearProgress variant="determinate" value={70}/>
                 </div>
             </div>
             <div className='skillcontainer__skillSet'>
                 <h5>Php</h5>
                 <div className='skillcontainer__slider skillcontainer__slider5'>
-                    <LinearProgress variant="determinate" value={60}/>
+                    <LinearProgress variant="determinate" value={70}/>
                 </div>
             </div>
             <div className='skillcontainer__skillSet'>
                 <h5>React Js</h5>
                 <div className='skillcontainer__slider skillcontainer__slider6'>
-                    <LinearProgress variant="determinate" value={70}/>
+                    <LinearProgress variant="determinate" value={75}/>
                 </div>
             </div>
             <div className='skillcontainer__skillSet'>
                 <h5>Node Js</h5>
                 <div className='skillcontainer__slider skillcontainer__slider7'>
-                    <LinearProgress variant="determinate" value={60}/>
+                    <LinearProgress variant="determinate" value={70}/>
                 </div>
             </div>
             <div className='skillcontainer__skillSet'>
@@ -76,7 +76,7 @@ const Skills = () => {
             <div className='skillcontainer__skillSet'>
                 <h5>Photoshop</h5>
                 <div className='skillcontainer__slider skillcontainer__slider11'>
-                    <LinearProgress variant="determinate" value={50}/>
+                    <LinearProgress variant="determinate" value={70}/>
                 </div>
             </div>
         </div>
