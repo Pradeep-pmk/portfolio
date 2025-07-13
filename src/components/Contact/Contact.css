@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 200px 0 100px;
+  padding: 0 15px;
+}
+
+.contact h1 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.contact__container {
+  width: 400px;
+  max-width: 90vw;
+  height: auto;
+  padding: 30px 20px;
+  background-color: #1c1c1c;
+  border: 1px solid white;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact__container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.contact__container p span {
+  color: #f64c08;
+  font-weight: 500;
+  word-break: break-word;
+  justify-content: center;
+}
+
+.contact__icon {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+.css-53g0n7-MuiButtonBase-root-MuiIconButton-root {
+  color: white !important;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.css-53g0n7-MuiButtonBase-root-MuiIconButton-root:hover {
+  color: #f64c08 !important;
+  transform: scale(1.2);
+}
+
+/* =================== RESPONSIVE QUERIES =================== */
+
+/* Tablets and smaller (≤ 768px) */
+@media only screen and (max-width: 768px) {
+  .contact h1 {
+    font-size: 28px;
+  }
+
+  .contact__container {
+    width: 100%;
+    padding: 25px 15px;
+    align-items: center;
+  }
+
+  .contact__container p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact__icon {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* Phones and smaller (≤ 425px) */
+@media only screen and (max-width: 425px) {
+  .contact h1 {
+    font-size: 24px;
+  }
+
+  .contact__container p {
+    font-size: 15px;
+  }
+
+  .css-53g0n7-MuiButtonBase-root-MuiIconButton-root {
+    font-size: 26px;
+  }
+}
+
+/* Extra small phones (≤ 320px) */
+@media only screen and (max-width: 320px) {
+  .contact h1 {
+    font-size: 22px;
+  }
+
+  .contact__container p {
+    font-size: 14px;
+  }
+
+  .contact__icon {
+    gap: 10px;
+  }
+
+  .css-53g0n7-MuiButtonBase-root-MuiIconButton-root {
+    font-size: 24px;
+  }
+}

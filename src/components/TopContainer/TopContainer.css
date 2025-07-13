@@ -1,0 +1,26 @@
+.topcontainer {
+  background: url("../../assets/two.png") center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 35px 35px 35px 35px rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* Optional: Add smooth scroll snap for hero section */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* Extra responsiveness for small screens (Optional) */
+@media only screen and (max-width: 768px) {
+  .topcontainer {
+    padding: 0 10px;
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}

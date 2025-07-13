@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.topcontent {
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.topcontent__container {
+  position: absolute;
+  top: 150px;
+  right: 70px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.topcontent__container h1 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+.topcontent__container p {
+  letter-spacing: 1px;
+  padding-left: 3px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.topcontent__container a button {
+  margin-bottom: 30px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+.topcontent__downloadButton {
+  color: white;
+  background-color: #f64c08;
+  font-size: 15px;
+  padding: 10px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.topcontent__myworkButton {
+  color: white;
+  border: 1px solid white !important;
+  background-color: transparent;
+  font-size: 15px;
+  padding: 9px 45px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.topcontent__downloadButton:hover {
+  color: #f64c08;
+  background-color: white;
+}
+
+.topcontent__myworkButton:hover {
+  color: black;
+  background-color: white;
+}
+
+/* ================= Responsive Queries ================= */
+
+/* Tablets (≤ 768px) */
+@media only screen and (max-width: 768px) {
+  .topcontent__container {
+    top: 120px;
+    right: 30px;
+    max-width: 90%;
+  }
+
+  .topcontent__container h1 {
+    font-size: 36px;
+  }
+
+  .topcontent__container p {
+    font-size: 16px;
+  }
+
+  .topcontent__downloadButton,
+  .topcontent__myworkButton {
+    font-size: 14px;
+    padding: 9px 25px;
+  }
+}
+
+/* Phones (≤ 425px) */
+@media only screen and (max-width: 425px) {
+  .topcontent__container {
+    position: relative;
+    top: unset;
+    right: unset;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .topcontent__container h1 {
+    font-size: 28px;
+  }
+
+  .topcontent__container p {
+    font-size: 14px;
+    padding-top: 15px;
+  }
+
+  .topcontent__downloadButton,
+  .topcontent__myworkButton {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* Extra small phones (≤ 320px) */
+@media only screen and (max-width: 320px) {
+  .topcontent__container h1 {
+    font-size: 24px;
+  }
+
+  .topcontent__container p {
+    font-size: 13px;
+  }
+}

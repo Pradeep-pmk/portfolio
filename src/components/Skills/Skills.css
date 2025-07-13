@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.skillContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 200px 0;
+  gap: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.skillcontainer__image {
+  flex: 0.4;
+  text-align: center;
+}
+
+.skillcontainer__image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.skillcontainer__text {
+  flex: 0.6;
+  color: white;
+  text-align: left;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.skillcontainer__text h2 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.skillcontainer__skillSet h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding: 10px 0 5px;
+}
+
+.css-1txyin7-MuiLinearProgress-root {
+  background-color: rgb(88, 88, 88) !important;
+}
+
+.skillcontainer__slider1 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #E34F26 !important; }
+.skillcontainer__slider2 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #264DE4 !important; }
+.skillcontainer__slider3 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #7952B3 !important; }
+.skillcontainer__slider4 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #F7DF1E !important; }
+.skillcontainer__slider5 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #8892BF !important; }
+.skillcontainer__slider6 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #61DAFB !important; }
+.skillcontainer__slider7 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #339933 !important; }
+.skillcontainer__slider8 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #00758F !important; }
+.skillcontainer__slider9 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #FF2D20 !important; }
+.skillcontainer__slider10 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #A259FF !important; }
+.skillcontainer__slider11 .css-l16vtb-MuiLinearProgress-bar1 { background-color: #31A8FF !important; }
+
+/* =================== Responsive Breakpoints =================== */
+
+/* Tablets (≤ 768px) */
+@media only screen and (max-width: 768px) {
+  .skillContainer {
+    flex-direction: column;
+    gap: 30px;
+    margin: 100px 0;
+  }
+.skillcontainer__image {
+  flex: 0.4;
+  text-align: center;
+}
+  .skillcontainer__image img {
+    max-width: 400px;
+  }
+
+  .skillcontainer__text {
+    max-width: 90vw;
+  }
+
+  .skillcontainer__text h2 {
+    font-size: 26px;
+  }
+.skillcontainer__text {
+  flex: 0.6;
+  color: white;
+  text-align: left;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+  .skillcontainer__skillSet h5 {
+    font-size: 15px;
+  }
+}
+
+/* Phones (≤ 425px) */
+@media only screen and (max-width: 425px) {
+  .skillcontainer__image img {
+    max-width: 320px;
+  }
+
+  .skillcontainer__text h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .skillcontainer__text {
+    text-align: center;
+  }
+
+  .skillcontainer__skillSet h5 {
+    font-size: 14px;
+  }
+}
+
+/* Extra small phones (≤ 320px) */
+@media only screen and (max-width: 320px) {
+  .skillcontainer__image img {
+    max-width: 280px;
+  }
+
+  .skillcontainer__text h2 {
+    font-size: 22px;
+  }
+
+  .skillcontainer__skillSet h5 {
+    font-size: 13px;
+  }
+}

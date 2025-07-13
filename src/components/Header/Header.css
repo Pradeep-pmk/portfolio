@@ -1,0 +1,151 @@
+/* Base styles (for desktop/laptop) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+
+.header__left h1 {
+    font-family: "Alata", sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.header__left h1 span {
+    color: #f64c08;
+}
+
+.header__right {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.header__right h4 {
+    font-family: "Crimson Text", serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.header__right h4:hover {
+    background-color: #f64c08;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.header__rightButton {
+    background-color: #f64c08;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header__rightButton:hover {
+    background-color: #d74200;
+}
+
+/* Menu icon (hidden on desktop) */
+.menu__icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* =============== MOBILE RESPONSIVE QUERIES =============== */
+
+/* For tablets and below (<= 768px) */
+@media only screen and (max-width: 768px) {
+    .menu__icon {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        z-index: 3000;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .header__right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 15px 0;
+        gap: 15px;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .header__right.open {
+        display: flex;
+    }
+
+    .header__right h4,
+    .header__rightButton {
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* For medium phones and below (<= 425px) */
+@media only screen and (max-width: 425px) {
+    .header__left h1 {
+        font-size: 22px;
+    }
+
+    .header__right h4,
+    .header__rightButton {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    .menu__icon {
+        font-size: 26px;
+    }
+}
+
+/* For small phones and below (<= 375px) */
+@media only screen and (max-width: 375px) {
+    .header__left h1 {
+        font-size: 20px;
+    }
+
+    .header__right h4,
+    .header__rightButton {
+        font-size: 14px;
+    }
+}
+
+/* For extra small phones (<= 320px) */
+@media only screen and (max-width: 320px) {
+    .header__left h1 {
+        font-size: 18px;
+    }
+
+    .header__right h4,
+    .header__rightButton {
+        font-size: 13px;
+    }
+
+    .menu__icon {
+        font-size: 24px;
+    }
+}
